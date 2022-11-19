@@ -1,10 +1,12 @@
 import Product from "./components/Product";
 
 
-function App(){
+const App = () => {
     return (
     <div className="container">
-        <Product />
+        <Product title="book 1" />
+        <Product title="book 2"/>
+        <Product title="book 3" />
     </div>
     )
 }

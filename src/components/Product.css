@@ -9,4 +9,15 @@
     border-radius: 1.6rem;
     background: #e0e0e0;
     color: #212121;
+    flex-direction: column;
+}
+
+.btn {
+    padding: 0.3rem 1rem;
+    background: #9e9e9e;
+    border: none;
+    border-radius: 0.3rem;
+    font: inherit;
+    font-size: 0.9rem;
+    color: #212121;
 }
