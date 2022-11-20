@@ -11,11 +11,13 @@ const App = () => {
         ]
     );
 
-
+    const deleteProduct = (id) => {
+        setProducts(products.filter((item)=> item.id !== id));
+    }
 
     return (
     <div className="container">
-        <ProductList products={products} />
+        <ProductList products={products} onDelete={deleteProduct} />
     </div>
     )
 }

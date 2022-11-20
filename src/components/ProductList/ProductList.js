@@ -1,11 +1,11 @@
 import Product from '../Product/Product';
 import './ProductList.css';
 
-const ProductList = ({products}) => {
+const ProductList = ({products, onDelete}) => {
     return (
         <div className='Product-list'>
             {products.map((item) => {
-                return <Product key={item.id} title={item.title}/>
+                return <Product key={item.id} product={item} onDelete={onDelete} />
             })}
         </div>
     );
