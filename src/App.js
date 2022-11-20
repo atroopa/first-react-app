@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import ProductList from "./components/ProductList/ProductList";
+import AddProduct from './components/AddProduct/AddProduct';
 
 const App = () => {
 
@@ -17,6 +18,7 @@ const App = () => {
 
     return (
     <div className="container">
+        <AddProduct/>
         <ProductList products={products} onDelete={deleteProduct} />
     </div>
     )
