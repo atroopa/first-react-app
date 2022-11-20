@@ -1,12 +1,21 @@
-import Product from "./components/Product/Product";
-
+import { useState } from 'react';
+import ProductList from "./components/ProductList/ProductList";
 
 const App = () => {
+
+    const [products, setProducts] = useState(
+        [
+            {id: 1, title:"Book 1"},
+            {id: 2, title:"Book 2"},
+            {id: 3, title:"Book 3"}
+        ]
+    );
+
+
+
     return (
     <div className="container">
-        <Product title="book 1" />
-        <Product title="book 2"/>
-        <Product title="book 3" />
+        <ProductList products={products} />
     </div>
     )
 }
