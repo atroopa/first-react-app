@@ -12,6 +12,10 @@ const App = () => {
         ]
     );
 
+    const addProduct = () => {
+        console.log(title)
+    }
+
     const deleteProduct = (id) => {
         setProducts(products.filter((item)=> item.id !== id));
     }
